@@ -14,10 +14,10 @@ enum CardSuit {
 impl Display for CardSuit{
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "{}", match self {
-            CardSuit::Hearts => '\u{2665}',
-            CardSuit::Spades => '\u{2660}',
-            CardSuit::Diamonds => '\u{2666}',
-            CardSuit::Clubs => '\u{2663}',
+            CardSuit::Hearts => 'H',
+            CardSuit::Spades => 'S',
+            CardSuit::Diamonds => 'D',
+            CardSuit::Clubs => 'C',
         })
     }
 }
